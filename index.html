@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>2D steady-state heat equation solver</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>2D steady-state heat equation solver (explicit)</h1>
+        <table class="main-table">
+            <!--<tr>
+                <th>
+                    <h2>Parameters</h2>
+                </th>
+                <th>
+                    <h2>Contour plot</h2>
+                </th>
+            </tr>-->
+            <tr>
+                <td>
+                    <div class="parameters">
+                        <h3>Physical parameters</h3>
+                        <p><label>Length in x-direction (L<sub>x</sub>) - [m]: </label><input id='Lx' value="20" placeholder="20"></p>
+                        <p><label>Length in y-direction (L<sub>y</sub>) - [m]: </label><input id='Ly' value="20" placeholder="20"></p>
+                        <p><label>Thermal conductivity (k) - [W/(m.K)]: </label><input id='k' value="45" placeholder="45"></p>
+                        <p><label>Specific heat capacity (c<sub>p</sub>) - [J/(kg.K)]: </label><input id='cp' value="502.416" placeholder="502.416"></p>
+                        <p><label>Mass density (&#961) - [kg/m³]: </label><input id='rho' value="8050" placeholder="8050"></p>
+                        <br>
+                        <h3>Numerical parameters</h3>
+                        <p><label>Number of points in x-direction (n<sub>x</sub>): </label><input id='nx' value="20" placeholder="20"></p>
+                        <p><label>Number of points in y-direction (n<sub>y</sub>): </label><input id='ny' value="20" placeholder="20"></p>
+                        <p><label>Tolerance (&#949): </label><input id='eps' value="1e-10" placeholder="1e-10"></p>
+                        <p><label>Maximum number of iterations: </label><input id='maxIt' value="10000" placeholder="10000"></p>
+                        <br>
+                        <h3>Boundary conditions</h3>
+                        <p><label>Left: </label><input id='BC1' value="10" placeholder="10">
+                             Type: <select name="BCtype" id="BC1type">
+                            <option value="Dirichlet">Dirichlet</option>
+                            <option value="Neumann">Neumann</option>
+                          </select></p>
+                        <p><label>Bottom: </label><input id='BC2' value="20" placeholder="20"> 
+                            Type: <select name="BCtype" id="BC2type">
+                            <option value="Dirichlet">Dirichlet</option>
+                            <option value="Neumann">Neumann</option>
+                          </select></p>
+                        <p><label>Top: </label><input id='BC3' value="30" placeholder="30"> 
+                            Type: <select name="BCtype" id="BC3type">
+                            <option value="Dirichlet">Dirichlet</option>
+                            <option value="Neumann">Neumann</option>
+                          </select></p>
+                        <p><label>Right: </label><input id='BC4' value="40" placeholder="40">
+                             Type: <select name="BCtype" id="BC4type">
+                            <option value="Dirichlet">Dirichlet</option>
+                            <option value="Neumann">Neumann</option>
+                          </select></p>
+                        <p><button id='solve'>SOLVE</button></p>
+                    </div>
+                </td>
+                <td>
+                    <div id='plot'></div>
+                </td>
+            </tr>
+        </table>
+    </body>
+    <script src="https://cdn.plot.ly/plotly-2.4.2.min.js"></script>
+    <script src="main.js"></script>
+</html>

@@ -1,0 +1,161 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #121212;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+button,
+input {
+  font-family: sans-serif;
+  color: #ddd;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: x-large;
+  color: #ddd;
+}
+
+h2 {
+  font-size: large;
+  font-weight: bold;
+  color: #7bb4da;
+}
+
+h3 {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #7bb4da;
+}
+
+.parameters {
+  padding: 10px;
+  border-right: 2px solid white;
+}
+
+#plot {
+  height: 800px;
+  width: 800px;
+  margin: 0 auto;
+  background-color: #121212;
+}
+
+.main-table,
+.main-table th,
+.main-table td {
+  margin: 0 auto;
+  border: 0px solid #121212;
+  align-items: center;
+  align-self: center;
+  text-align: right;
+  padding: 5px;
+}
+
+input,
+label,
+select,
+option {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+input,
+label {
+  width: 40px;
+  height: 15px;
+  margin: 0 auto;
+}
+
+input {
+  color: black;
+}
+
+label,
+input {
+  align-items: center;
+  align-self: center;
+  text-align: center;
+}
+
+/*button {
+    width: 60px;
+    height: 30px;
+    font-family: sans-serif;
+    font-size:medium;
+    background-color: black;
+}*/
+
+button {
+  align-items: right;
+  align-self: right;
+  font-weight: 700;
+  border: 0;
+  background: none;
+  margin: 20px auto;
+  border: 2px solid #2ecc71;
+  padding: 14px 10px;
+  width: 100px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2ecc71;
+}
+
+input {
+  border: 0;
+  background: none;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 14px 10px;
+  width: 60px;
+  outline: none;
+  color: #aaa;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+
+input:focus {
+  width: 80px;
+  border-color: #2ecc71;
+}
+
+select {
+  border: 0;
+  background: #121212;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 14px 10px;
+  width: 120px;
+  outline: none;
+  color: #aaa;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+
+select:focus {
+  width: 130px;
+  border-color: #2ecc71;
+}
+
+option {
+  border: 0;
+  background: none;
+  text-align: center;
+  align-items: center;
+  padding: 14px 10px;
+  width: 110px;
+  outline: none;
+  color: #aaa;
+  border: 14px 10px;
+}
